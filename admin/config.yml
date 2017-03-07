@@ -12,18 +12,6 @@ media_folder: "assets/img/uploads" # Folder where user uploaded files should go
 public_folder: "assets"
 
 collections: # A list of collections the CMS should be able to edit
-  # - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
-  #   label: "Post"  # Used in the UI, ie.: "New Post"
-  #   folder: "posts" # The path to the folder where the documents are stored
-  #   create: true # Allow users to create new documents in this collection
-  #   fields: # The fields each document in this collection have
-  #     - {label: "Title", name: "title", widget: "string"}
-  #     - {label: "Banner", name: "banner", widget: "image", class: "image featured"}
-  #     - {label: "Short Description", name: "shortdesc", widget: "string"}
-  #     - {label: "Body", name: "body", widget: "markdown"}
-  #   meta: # Meta data fields. Just like fields, but without any preview element
-  #     - {label: "Publish Date", name: "date", widget: "datetime"}
-  #     - {label: "Categories", name: "categories", widget: "string"}
   - name: "sitedata"
     label: "Site Information"
     files:
@@ -53,16 +41,12 @@ collections: # A list of collections the CMS should be able to edit
         file: "data/config.json"
         description: "Do not change anything beyond this point unless you know what you are doing."
         fields:
-
-          # Add navigation item here
           - label: "Header - Menu Section"
-            name: "headermenu"
+            name: "config"
             widget: "list"
             fields:
               - {label: "Item", name: "item", widget: "string"}
               - {label: "Url ex.(/page/slug)", name: "url", widget: "string"}
-
-          # Modify header properties
           - label: "Header - Navigation Section"
             name: "headernavigation"
             widget: "list"
@@ -70,8 +54,6 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Email", name: "email", widget: "string"}
               - {label: "Contact Number", name: "phone", widget: "string"}
               - {label: "Site Logo", name: "logo", widget: "image", media_folder: "assets/config"}
-
-          # Hero image section
           - label: "Header - Hero Section"
             name: "headerhero"
             widget: "list"
@@ -80,14 +62,11 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Hero secondary heading", name: "headerhero_secondaryheading", widget: "markdown"}
               - {label: "Hero read more text", name: "headerhero_button_text", widget: "string"}
               - {label: "Hero read more link", name: "headerhero_button_link", widget: "string"}
-
-          # Footer
           - label: "Footer - Section"
             name: "footer"
             widget: "list"
             fields:
               - {label: "Footer about us Text", name: "footer_about", widget: "markdown"}
-
 
   - name: "blog" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Blog"  # Used in the UI, ie.: "New Post"

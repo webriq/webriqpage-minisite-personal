@@ -30,7 +30,7 @@ if _path == "/index.html"
             a(href="http://fionataylor.buzzin.today/")
               img(src="../img/fiona/fionataylor_logo.png")
            ul.sidenav-menu
-            each conf in records.config.headermenu
+            each conf in records.config.config
                li(class= conf.class)
                   a(href= conf.url)= conf.item
            div.credentials_nav
