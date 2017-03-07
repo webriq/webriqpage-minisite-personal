@@ -1,16 +1,194 @@
 section#copyright
-	div.container
-		div.row
-			div.col-lg-12
-				p= records.site.sitedata[0].footer
+    div.container
+        div.row
+            div.col-md-6.behind.text-left
+                h4 About
+                p.det
+                    = records.config.footer[0].footer_about
+
+            div.col-md-3.quicklnks.text-left
+                h4 Site Map
+                ul.lnks
+                  each footerlink in records.config.headermenu
+                    li(class= footerlink.class)
+                      a(href= footerlink.url)= footerlink.item
 
 
-	!= js()
-	script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+
+            div.col-md-3.conts.text-left
+                h4 Contact Details
+                ul.cntdets
+                    li
+                        a(href="mailto:fm.taylor@gmail.com")
+                            img(src="../img/fiona/eamil.png")
+                            | fm.taylor@gmail.com
+                    li
+                        a(href="tel:01698 842 735") 
+                            img(src="../img/fiona/phone.png")
+                            | 07715167426
+
+            div.col-md-12.text-center
+                p © 2017 Fiona Taylor | All Rights Reserved by 
+                  a(href="http://webfactories.biz/" target="_blank") Webfactories.
 
 
-	<!-- Google Analytics -->
-	script(type="text/javascript")
-		!= records.site.sitedata[0].analytics
+    != js()
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js")
+    script(type="text/javascript" src='../js/lightbox-plus-jquery.min.js')
+    script(type='text/javascript' src='https://code.jquery.com/jquery-2.1.4.min.js')
+    script(type="text/javascript" src="../js/webriq-bootstrap-material-ui.min.js")    
+    script(type="text/javascript" src="../js/jquery.expander.js")
+    script(type="text/javascript" src="../js/jquery.vscroll.js")
+    script(type="text/javascript" src='../js/isotope.pkgd.min.js')    
+    script(type="text/javascript" src='../js/imagesloaded.pkgd.min.js')
+    script(type="text/javascript" src='../js/lazyload.js')
+    script(type="text/javascript" src='../js/sidenav.min.js')
+    
+
+    script.
+      $('[data-sidenav]').sidenav();
+
+    script.
+        $(document).ready(function(){
+        $(".closebtn").click(function(){
+        $("nav").removeClass("show");
+        });
+        });
+
+    script.
+      $(document).ready(function() {
+      $('.det_right_missn p').expander({
+        slicePoint: 253, //It is the number of characters at which the contents will be sliced into two parts.
+        widow: 2,
+        expandSpeed: 0, // It is the time in second to show and hide the content.
+        userCollapseText: 'less' // Specify your desired word default is Less.
+      });
+      $('.detbiofull').expander({
+        slicePoint: 353, //It is the number of characters at which the contents will be sliced into two parts.
+        widow: 2,
+        expandSpeed: 0, // It is the time in second to show and hide the content.
+        userCollapseText: 'less' // Specify your desired word default is Less.
+      });
+      $('.det.expand').expander();
+
+      });
 
 
+    script.
+      (function() {
+      "use strict";
+      var toggles = document.querySelectorAll(".c-hamburger");
+      for (var i = toggles.length - 1; i >= 0; i--) {
+      var toggle = toggles[i];
+      toggleHandler(toggle);
+      };
+      function toggleHandler(toggle) {
+      toggle.addEventListener( "click", function(e) {
+      e.preventDefault();
+      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+      });
+      }
+      })();
+    
+    script.
+      $(document).ready(function() {
+      //- $('div.expandDiv').expander({
+      //- slicePoint: 367, //It is the number of characters at which the contents will be sliced into two parts.
+      //- widow: 2,
+      //- expandSpeed: 0, // It is the time in second to show and hide the content.
+      //- userCollapseText: 'less' // Specify your desired word default is Less.
+      //- });
+      //- $('div.expandDiv').expander();
+
+      $('#sliderhead').VScroll(0.1);
+      $('#bioinfo').VScroll(0.1);
+      $('.leftbio').VScroll(0.2);
+      $('#startjourney').VScroll(0.2);
+      });
+
+    script.
+      $(function(){
+      var shrinkHeader = 2;
+      $(window).scroll(function() {
+      var scroll = getCurrentScroll();
+      if ( scroll >= shrinkHeader ) {
+      $('.containerheader').addClass('shrink');
+      }
+      else {
+      $('.containerheader').removeClass('shrink');
+      }
+      });
+      function getCurrentScroll() {
+      return window.pageYOffset || document.documentElement.scrollTop;
+      }
+      });
+
+    script.
+      $(window).load(function(){
+      var $container = $('#shop_wrapper').imagesLoaded( function() {
+      $container.isotope({
+      boxSelector: '.webshop_list_item'
+      });
+      });
+      // filter
+      $('#filters').on( 'click', 'button', function() {
+      var filterValue = $(this).attr('data-filter');
+      $container.isotope({ filter: filterValue });
+      });
+      });
+
+    script(type='text/javascript').
+      $(document).ready(function () {
+        $(".buttontween").on("click", function() {
+          $(".sidenav-menu").removeClass('show-down');
+        })
+        $("#sidenav-toggle").on('click', function(){
+          $('.sidenav-menu').each(function(){
+            var list = $(this).find('li');
+            TweenMax.staggerFromTo(list, 1, {y:"-=50", opacity: "0"}, {y:"0", opacity: "1"}, 0.2);
+          })
+        })
+        $('a[href^="#"]').on('click', function(event) {
+          var target = $(this.getAttribute('href'));
+          if( target.length ) {
+          event.preventDefault();
+          $('html, body').stop().animate({
+          scrollTop: target.offset().top
+          }, 800);
+          }
+        });
+        $("#sidenav-toggle").on('click', function(){
+            TweenMax.staggerFromTo('.social-sidebar-topright li a', 2, {x:"-=100", opacity: "0"}, {x:"0", opacity: "1"}, 0.4);
+            TweenMax.staggerFromTo('.credentials_nav p', 2, {x:"-=80", opacity: "0"}, {x:"0", opacity: "1"}, 0.4);
+        })
+            TweenMax.staggerFromTo('#sliderhead .text-det h2', 2, {y:"-=50", opacity: "0"}, {y:"0", opacity: "1"}, 0.9);
+            TweenMax.staggerFromTo('#sliderhead .text-det h4', 3, {y:"-=50", opacity: "0"}, {y:"0", opacity: "1"}, 0.9);
+            TweenMax.staggerFromTo('#sliderhead .talk a', 3, {y:"+=50", opacity: "0"}, {y:"0", opacity: "1"}, 0.9);
+            TweenMax.staggerFromTo('#sliderhead .slider_img_right img', 3, {x:"-=50", opacity: "0"}, {x:"0", opacity: "1"}, 0.9);
+            
+        })
+
+      $(window).on("scroll", function() {
+        var scrolled = $(this).scrollTop();
+        $(".section").filter(function() {
+        return scrolled >= $(this).offset().top - 240
+        }).addClass("in-view").trigger("classChange")
+        });
+
+        $(".section").on("classChange", function(e) {         
+          TweenMax.staggerFromTo('#blogsec.section .col-md-4 ', 2, {y:"-=50", opacity: "0"}, {y:"0", opacity: "1"}, 0.4);
+          TweenMax.staggerFromTo('#mission.section .ttle_h2', 2, {y:"-=50", opacity: "0"}, {y:"0", opacity: "1"}, 0.9);
+          TweenMax.staggerFromTo('#mission.section .ttle_h4_sub', 2, {y:"-=40", opacity: "0"}, {y:"0", opacity: "1"}, 0.9);
+          TweenMax.staggerFromTo('#gallery.section h1', 2, {y:"-=50", opacity: "0"}, {y:"0", opacity: "1"}, 0.9);
+          TweenMax.staggerFromTo('#blogsec.section .row', 2, {y:"+=50", opacity: "0"}, {y:"0", opacity: "1"}, 0.9);
+          TweenMax.staggerFromTo('#gallery.section h5', 2, {y:"-=40", opacity: "0"}, {y:"0", opacity: "1"}, 0.9);
+          TweenMax.staggerFromTo('#blogsec.section h1', 2, {y:"-=50", opacity: "0"}, {y:"0", opacity: "1"}, 0.9);
+          TweenMax.staggerFromTo('#blogsec.section h3.sub', 2, {y:"-=40", opacity: "0"}, {y:"0", opacity: "1"}, 0.9);
+          TweenMax.staggerFromTo('#blogsec.section .morelink', 2, {y:"-=40", opacity: "0"}, {y:"0", opacity: "1"}, 0.9);
+          $(this).off(e);
+        });
+        
+    <!-- Google Analytics -->
+    script(type="text/javascript")
+        != records.site.sitedata[0].analytics

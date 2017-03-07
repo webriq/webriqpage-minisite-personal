@@ -1,0 +1,67 @@
+
+
+header.containerheader
+        nav.navbar.navbar-default.home
+          .container
+            // Brand and toggle get grouped for better mobile display
+            .col-md-6.col-sm-4.col-xs-4.text-left.menuleft
+                div.btnrigt
+                 a(href="javascript:;" class="toggle buttontween" id="sidenav-toggle") 
+                  img(src="../img/fiona/burgermenu.png")
+                  | MENU
+
+            .col-md-6.col-sm-8.col-xs-8.social-right
+              ul.contct_right_header
+                 li.emailhdr
+                    a(href="mailto:fm.taylor@gmail.com" target="_blank")
+                      img(src="../img/fiona/eamil.png")
+                      | fm.taylor@gmail.com
+                 li
+                    a(href="tel:07715167426" target="_blank")
+                      img(src="../img/fiona/phone.png")
+                      | 07715167426
+
+                 
+        a.closebtn(href='javascript:void(0)' class="buttontween") ×
+
+        nav#nav2.sidenav(data-sidenav='', data-sidenav-toggle='#sidenav-toggle')
+           div.logonav
+            a(href="http://fionataylor.buzzin.today/")
+              img(src="../img/fiona/fionataylor_logo.png")
+           ul.sidenav-menu
+               li
+                  a(href="http://www.fionataylor.buzzin.today/#page-top") Home
+               li
+                  a(href="http://www.fionataylor.buzzin.today/#mission") Mission In Life
+               li
+                  a(href="http://www.fionataylor.buzzin.today/#bioinfo") Bio Information
+               li
+                  a(href="http://www.fionataylor.buzzin.today/#gallery") Gallery
+               li
+                  a(href="http://www.fionataylor.buzzin.today/#blogsec") Blog
+               li
+                  a(href="http://www.fionataylor.buzzin.today/#copyright") Contact
+            div.credentials_nav
+               //- ul.social-sidebar-topright
+               //-   li
+               //-      a(href="https://www.facebook.com/hendrytraining/" target="_blank") 
+               //-        i.fa.fa-facebook(aria-hidden='true')
+               //-   li
+               //-      a(href="https://twitter.com/Hendry_Training" target="_blank")
+               //-        i.fa.fa-twitter(aria-hidden='true')
+               //-   li
+               //-      a(href="https://plus.google.com/103138710136868592759" target="_blank")
+               //-        i.fa.fa-google-plus(aria-hidden='true')
+               p.resrv © 2017 Fiona Taylor
+                br 
+                | All Rights Reserved by Webfactories
+
+
+
+#sliderhead.blog-header(style="background: #0092a8 url(../img/fiona/northlanarkshire_bg.jpg) fixed")
+    div.container.text-center
+        div.text-det
+            h2=entry.title
+            div.date-head              
+              h6
+                != "<i class='fa fa-bookmark-o'></i> <i>By</i> <b>" + entry.author + "</b> | <i class='fa fa-clock-o'></i> Created on <b> " + dateFormat(entry.date, 'LL') + "</b>"
