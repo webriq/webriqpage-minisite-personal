@@ -1,1 +1,83 @@
-{"footer":[{"footer_about":"Coached more than 40,000 people world-wide to use their most valuable free gift, their voice to live the life they dream of."}],"headerhero":[{"headerhero_button_link":"tel:07715167426","headerhero_button_text":"Let's talK!","headerhero_mainheading":"Coached more than 40,000 people","headerhero_secondaryheading":"World-wide to use their most valuable free gift, their voice to live the life they dream of."}],"config":[{"class":"footerlink","item":"Home","url":"#page-top"},{"class":"footerlink","item":"Mission In Life","url":"#mission"},{"class":"footerlink","item":"Bio Information","url":"#bioinfo"},{"class":"footerlink","item":"Gallery","url":"#gallery"},{"class":"footerlink","item":"Blog","url":"#blogsec"},{"class":"footerlink hidden","item":"Contact","url":"#copyright"}],"headernavigation":[{"email":"fm.taylor@gmail.com","logo":"../img/fiona/fionataylor_logo.png","phone":"07715167426"}],"updatedDate":"2017-03-05T01:31:00.799Z"}
+{
+  "config": [
+    {
+      "class": "footerlink",
+      "item": "Home",
+      "url": "#page-top"
+    },
+    {
+      "class": "footerlink",
+      "item": "About",
+      "url": "#mission"
+    },
+    {
+      "class": "footerlink",
+      "item": "Information",
+      "url": "#bioinfo"
+    },
+    {
+      "class": "footerlink",
+      "item": "Gallery",
+      "url": "#gallery"
+    },
+    {
+      "class": "footerlink",
+      "item": "Blog",
+      "url": "#blogsec"
+    },
+    {
+      "class": "footerlink",
+      "item": "Contact",
+      "url": "#copyright"
+    },
+    {
+      "class": "footerlink",
+      "item": "Lorem",
+      "url": "#copyright"
+    }
+  ],
+  "footer": [
+    {
+      "footer_about": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    }
+  ],
+  "headerhero": [
+    {
+      "headerhero_button_link": "tel:0987654321",
+      "headerhero_button_text": "Call us!",
+      "headerhero_mainheading": "Lorem Ipsum is simply dummy text of the printing",
+      "headerhero_secondaryheading": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    }
+  ],
+  "headernavigation": [
+    {
+      "email": "buzzintoday.@buzzin.com",
+      "logo": "../img/fiona/fionataylor_logo.png",
+      "phone": "0987654321"
+    }
+  ],
+  "mission": [
+    {
+      "mission_heading": "Lorem Ipsum",
+      "mission_subheading": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "mission_paragraph_1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "mission_paragraph_2": "I am really keen to set up a shared-space working environment so one-man bands (sole entrepreneurs as I am frequently reminded) like me can have a place to work away from the kitchen table and meet other like-minded people who want to be out there - be able to say - I'll meet you at my office and be able to afford it without all the worry and stress of having to pay huge amounts of money and tied into a death-sentence lease.",
+      "mission_paragraph_3": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur"
+    }
+  ],
+  "mission_icons": [
+    {
+      "mission_image": "/config/bggerpop.png",
+      "mission_image_text": "Lorem Ipsum"
+    },
+    {
+      "mission_image": "/config/bggerpop.png",
+      "mission_image_text": "Lorem Ipsum"
+    },
+    {
+      "mission_image": "/config/setupenvironment.png",
+      "mission_image_text": "Lorem Ipsum"
+    }
+  ],
+  "updatedDate": "2017-03-05T01:31:00.799Z"
+}

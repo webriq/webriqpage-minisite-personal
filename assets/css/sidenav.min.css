@@ -21,7 +21,7 @@
     z-index:111 !important;
     margin-left:150px;
     font-size:0px;
-    background:#04c5aa;
+    background:#2196F3;
     border-radius:50%;
     padding:10px 20px;
     color:#333;
@@ -32,7 +32,7 @@
     background:#fff;
 }
 .closebtn:hover:after {
-    color:#04c5aa;
+    color: #2196F3;
 }
 .closebtn:after {
     content:"\f00d";
@@ -82,11 +82,11 @@
 .resrv {
     padding:5px 5px 0px;
     font-size:16px;
-    color:#5db1b3 !important;
+    color: #f5f5f5 !important;
 }
 .logonav {
     padding:30px 40px 5px;
-    background:#1b5d5f 
+    background:&blue
 }
 .logonav img{
     width:100%;
@@ -110,10 +110,10 @@
     padding:20px 40px  0px;
     text-align:left;    
 }
-.sidenav-menu li{ 
+.sidenav-menu li{
     padding:9px 0px;
     list-style:none;
-    border-bottom:solid 1px #145658 !important;
+    border-bottom: solid 1px #4298de !important;
 }
 .sidenav-menu li a{ 
     color:rgb(255, 255, 255) !important;
@@ -121,30 +121,12 @@
     line-height:1.em;
     text-decoration:none !important;
 }
-.sidenav-menu li a:hover{ 
-    color:#0ebdc1  !important;
+.sidenav-menu li a:hover{
+    color: #2196F3  !important;
     text-decoration:none;
 }
 
-.sidenav { 
-background: #044042; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #1b5d5f , #044042); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #1b5d5f  , #044042 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
-    box-shadow: 2px 2px 5px rgba(91, 123, 125, 0.3);
-    display: block;
-    font-size: 16px;
-    font-weight: 400;
-    height: 100%;
-    left: 0;
-    position: fixed;
-    overflow: auto;
-    transform: translate(-306px, 0);
-    transition: transform .4s;
-    top: 0;
-    width: 306px;
-    z-index:10100000000000 !important;
-}
+.sidenav {background: #044042; /* fallback for old browsers */background: -webkit-linear-gradient(to left, #1b5d5f , #044042); /* Chrome 10-25, Safari 5.1-6 */background: linear-gradient(260deg,#4d9fe0,#1583dc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */box-shadow: 2px 2px 5px rgba(91, 123, 125, 0.3);display: block;font-size: 16px;font-weight: 400;height: 100%;left: 0;position: fixed;overflow: auto;transform: translate(-306px, 0);transition: transform .4s;top: 0;width: 306px;z-index:10100000000000 !important;}
 .sidenav.show {
     transform: translate(0, 0);
     overflow-x:hidden;

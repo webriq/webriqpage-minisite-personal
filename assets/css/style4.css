@@ -63,7 +63,7 @@
 	border-radius:50%;
 }
 .contct_right_header li:hover img{
-	background:#77a18b;
+	background:#2196F3;
 	transition:.5s;
 }
 .slider_img_right img{
@@ -140,7 +140,7 @@
 /*mission*/
 
 #mission {
-	background:#05bdac url(../img/fiona/mission-bg.jpg) no-repeat fixed;
+	background:#05bdac url(../img/fiona/mission-bg-2.jpg) no-repeat fixed;
 	padding:50px 0px 30px;
 	background-size:cover !important;	
 	z-index:111;
@@ -176,7 +176,7 @@
 #mission .miss_serv .col-md-4:nth-child(1) figure::after{
 	content:"";
 	display:block;
-	background:#78fbef !important;
+	background: #ffffff !important;
 	height:1px;
 	float:right;
 	width:85%;
@@ -186,7 +186,7 @@
 #mission .miss_serv .col-md-4:nth-child(2) figure::after{
 	content:"";
 	display:block;
-	background:#78fbef !important;
+	background: #ffffff !important;
 	height:1px;
 	float:right;
 	width:85%;
@@ -197,7 +197,7 @@
 	padding:50px 50px;
 }
 #mission .miss_serv .col-md-4 figure{
-	border:solid 2px #78fbef;
+	border: solid 2px #ffffff;
 	border-radius: 50%;
 	width:59%;
 	margin:0 auto !important;
@@ -213,7 +213,7 @@
 	color:#fff;
 }
 #mission .miss_det_btm p .more-link{
-	 color:#6cfff0;
+	 color: #fff;
 	 text-decoration:underline;
 }
 #mission .miss_det_btm p  .less-link {
@@ -241,7 +241,7 @@
 	padding:0px;
 }
 #bioinfo .leftbio{
-	background:#373434 url(/img/fiona/bio-bg.png)no-repeat fixed;
+	background:#373434 no-repeat fixed;
 	background-size:cover;
 	max-height:100% !important;
 	height:591px !important;
@@ -257,7 +257,7 @@
 	background-color: #05a78a;
 }
 #bioinfo .leftbio::-webkit-scrollbar-thumb {
-	background-color: #01b4ae !important;	
+	background-color: #52a5e8 !important;
 }
 
 
@@ -280,9 +280,9 @@
 }
 #bioinfo .leftbio .headbio {
 	font-size:28px;
-	color:#38ffea;
+	color: #52a5e8;
 	font-weight:100;
-	padding-top:20px !important
+	padding-top:20px !important;
 }
 #bioinfo .leftbio .headbio span{
 	font-size:28px;
@@ -293,10 +293,10 @@
 	padding-top:30px;
 }
 #bioinfo .leftbio .biodet .bioleft-thumb img {
-	border:solid 1px #4befe4;
+	border: solid 1px #52a5e8;
 	padding:10px 14px;
 	border-radius:50%;
-	margin-top:10px
+	margin-top:10px;
 }
 #bioinfo .leftbio .biodet .bioright-det {
 	padding:0px;
@@ -308,22 +308,22 @@
 	font-weight:300;
 }
 .detbiofull a{
-	color:#4befe4
+	color: #52a5e8;
 }
 
 
 /*gallery*/
 
 #gallery {
-	background:#32465e url(../img/fiona/gallery_bg.png)no-repeat top;
-	padding:60px 0px 60px 
+	background: #32465e;
+	padding:60px 0px 60px;
 }
 #gallery .gallry-list {
 	padding:40px 0px
 }
 #gallery .title-header {
 	font-size:25px;
-	color:#1ee7e6;
+	color: #52a5e8;
 	font-weight: 700;
 }
 #gallery .sub {
@@ -349,7 +349,7 @@
 
 #startjourney { 
 	padding:120px 0px;
-	background:url(../img/fiona/northlanarkshire_bg.jpg)no-repeat fixed;
+	background:url(../img/fiona/northlanarkshire_bg2.jpg)no-repeat fixed;
 	background-position:cover !important;
 	background-size:100% 100%;
 }

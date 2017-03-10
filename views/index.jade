@@ -4,43 +4,41 @@ block content
 
     div#mission.section
       div.container.text-center
-        h2.ttle_h2 Mission In Life
-        h4.ttle_h4_sub Let's start working together and We must get our name out there and to be proud of.
+        h2.ttle_h2
+          | Connect With Us
+          --//= records.config.mission[0].mission_heading
+        h4.ttle_h4_sub
+          = records.config.mission[0].mission_subheading
         div.row.miss_serv
-          div.col-md-4.col-sm-4.col-xs-6.gveback
-            figure
-              img(src="../img/fiona/giveback.png")
-            p.det_btm GIVE BACK!
-          div.col-md-4.col-sm-4.col-xs-6.bgrpop
-            figure
-              img(src="../img/fiona/bggerpop.png")
-            p.det_btm BIGGER POPULATION
-          div.col-md-4.col-sm-4.col-xs-12.setpenv
-            figure
-              img(src="../img/fiona/setupenvironment.png")
-            p.det_btm SET UP ENVIRONMENT
+          each icon in records.config.mission_icons
+            div.col-md-4.col-sm-4.col-xs-6.gveback
+              figure
+                img(src= icon.mission_image)
+              p.det_btm
+                = icon.mission_image_text
+
         div.row.miss_det_btm
           div.col-md-6.col-sm-6.col-xs-12.det_left_missn
             p.text-center
-              | I want  to give back. I am Airdrie born and bred and still living here (all be it in in my 4th home) - why should I not be so proud of that? There is a bigger population in North and South Lanarkshire than in Glasgow - so we must get our name out there for all to be proud of.
+              | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           div.col-md-6.col-sm-6.col-xs-12.det_right_missn
             p.text-center
               | I am really keen to set up a shared-space working environment so one-man bands (sole entrepreneurs as I am frequently reminded) like me can have a place to work away from the kitchen table and meet other like-minded people who want to be out there - be able to say - "I'll meet you at my office" and be able to afford it without all the worry and stress of having to pay huge amounts of money and tied into a death-sentence lease.
           div.col-md-12.col-sm-12.col-xs-12.det_center_missn
             p.text-center
-              | Also it's lonely in the kitchen all by yourself. The interaction, comraderie, chat and wee blether can make our day and heighten our moral - so we pass on that smile.
+              | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur
             p.brkr-img
-              img(src="../img/fiona/mission-small-border.png")
+              img(src="../img/fiona/mission-border-small.png")
     
 
     div#bioinfo.section
         .container-fluid
           .row
             .col-md-8.col-sm-8.col-xs-12.leftbio
-              h3.titlesevces BIO Information
+              h3.titlesevces Better than the best
               p.subbio See Details Below.
-              h4.headbio Fiona Taylor has coached more than 
-                span.biospan 40,000 
+              h4.headbio Build static websites with an easy-to-use framework 
+                span.biospan Lorem 
                 | people world-wide to use their most valuable free gift, their voice to live the life they dream of.
               div.biodet
                 .row
@@ -48,89 +46,89 @@ block content
                     img(src="/img/fiona/bio/bioimg1.png")
                   .col-md-10.bioright-det
                     p.detbiofull
-                      span Fiona 
-                      | started public stpeaking in school and won an international public speaking competition and went on to debate at the University of Glasgow. Here she was elected as the Post-Graduate Student Representative during her further studies sitting on the board with the Principal and other stakeholders.
+                      span Lorem
+                      | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 .row
                   .col-md-2.bioleft-thumb
                     img(src="/img/fiona/bio/bioimg2.png")
                   .col-md-10.bioright-det
                     p.detbiofull
-                      span Fiona 
-                      | realised she had a passion for speaking which resulted in a very successful career in sales, top sales person in the UK and in Europe. She progressed into training and coaching, being part of the launch of the Disney Channel, and into writing bespoke training packages for individuals, groups and companies.
+                      span Lorem
+                      | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 .row
                   .col-md-2.bioleft-thumb
                     img(src="/img/fiona/bio/bioimg3.png")
                   .col-md-10.bioright-det
                     p.detbiofull
-                      | Her enthusiasm for communication led to being part of the set-up committee of a local group to reclaim a green-belt area in the neighbourhood. She established a Council for Voluntary Services across North Lanarkshire, Scotland to be the voice of the 400 local voluntary groups and the representative for the 17 West of Scotland CVS’s at national level. Her belief in giving a voice to people who have no voice resulted in her appointment as Director and Vice-Chair of the local Women’s Aid.  She was also invited to sit on the North Lanarkshire Council board with the Chief Executive, Council Leaders and local high ‘heid-yins as they say in Lanarkshire.
+                      | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 .row
                   .col-md-2.bioleft-thumb
                     img(src="/img/fiona/bio/bioimg4.png")
                   .col-md-10.bioright-det
                     p.detbiofull
-                      | Her understanding of speaking on behalf of the collective voice has provided the opportunity to represent the Ocean Youth Trust in the Scottish Parliament. Fiona was delighted when her watch won the Maritime and Coastguard Agency Safety Award during the Tall Ships Atlantic Challenge. The watch was presented with a magnificent trophy on stage in Belfast which was then dropped and ‘broken’ much to the delight of the audience!
+                      | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
                 .row
                   .col-md-2.bioleft-thumb
                     img(src="/img/fiona/bio/bioimg5.png")
                   .col-md-10.bioright-det
                     p.detbiofull
-                      | Fiona’s advocacy of helping people define and explore the uniqueness of their own voice and how they communicate with the world. This is part of her voluntary work for Bega Kwa Bega (meaning Shoulder to Shoulder), Uganda; and as a Trustee of Spinal Injuries Scotland. Raising funds has included climbing Ben Nevis, the highest mountain in Scotland and a tandem parachute jump, never to be repeated.
+                      | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
                 .row
                   .col-md-2.bioleft-thumb
                     img(src="/img/fiona/bio/bioimg6.png")
                   .col-md-10.bioright-det
                     p.detbiofull
-                      | Her work has included organising an international speaking conference for delegates across Europe and as far afield as Russia and Canada. Part of the fun was ensuring candidates drove on the left side of the road. In 2016 Fiona was invited to represent a co-operative on a trade mission to East Africa visiting Rwanda, Tanzania and Kenya. Fiona also attended the International Rotary Convention in South Korea as secretary/treasurer of the International Yachting Federation of Rotarians, Clyde Fleet.
+                      | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
                 .row
                   .col-md-2.bioleft-thumb
                     img(src="/img/fiona/bio/bioimg7.png")
                   .col-md-10.bioright-det
                     p.detbiofull
-                      | Her research has involved working with the Scottish Funding Councils. The highlight was delivering her paper at an international conference at University of Oxford on the transition of students through further education in colleges into higher education in universities and ensure their voice was heard.
+                      | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
                       br
-                      | Fiona’s mantra is people will never remember what you say to them – the actual words that you use, but they will always remember how you made them feel. 
+                      |  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
 
 
             .col-md-4.col-sm-4.col-xs-12.rightbioimg
-              img(src="../img/fiona/bio-image-right.jpg")   
+                  img(src="../img/fiona/bio-image-right.jpg")   
      
     div#gallery.section
       div.container.text-center
-        h1.title-header GALLERY
-        h5.sub See my gallery and something i want to 
+        h1.title-header Socialize With Us
+        h5.sub Lorem Ipsum is simply dummy text of the printing 
           br
-          | be proud of
+          | Lorem Ipsum
         div.row.gallry-list
           div.col-md-4.col-sm-6.col-xs-12
-            a.example-image-link(href='../img/fiona/gallery/fiona_taylorsurvey_article.jpg', data-lightbox='example-set', data-title='Discover Your Voice of Power')
-              img.example-image(src="../img/fiona/gallery/fiona_taylorsurvey_article_thumb.jpg") 
+            a.example-image-link(href='../img/fiona/gallery/larger-img-1.jpg', data-lightbox='example-set', data-title='Lorem Ipsum')
+              img.example-image(src="../img/fiona/gallery/dummy-img-1.jpg") 
           div.col-md-4.col-sm-6.col-xs-12
-            a.example-image-link(href='../img/fiona/gallery/Fiona-Taylor.jpg', data-lightbox='example-set', data-title='Fional Taylor')
-              img.example-image(src="../img/fiona/gallery/Fiona-Taylor_thumb.jpg")
+            a.example-image-link(href='../img/fiona/gallery/larger-img-2.jpg', data-lightbox='example-set', data-title='Lorem Ipsum')
+              img.example-image(src="../img/fiona/gallery/dummy-img-2.jpg")
           div.col-md-4.col-sm-6.col-xs-12
-            a.example-image-link(href='../img/fiona/gallery/fiona.jpg', data-lightbox='example-set', data-title='Novel Tale of Success as Author')
-              img.example-image(src="../img/fiona/gallery/fiona_thumb.jpg")
+            a.example-image-link(href='../img/fiona/gallery/larger-img-3.jpg', data-lightbox='example-set', data-title='Lorem Ipsum')
+              img.example-image(src="../img/fiona/gallery/dummy-img-3.jpg")
           div.col-md-4.col-sm-6.col-xs-12
-             a.example-image-link(href='../img/fiona/gallery/eyes-on-the-road.jpg', data-lightbox='example-set', data-title='Chamber magazines')
-              img.example-image(src="../img/fiona/gallery/eyes-on-the-road_thumb.jpg")
+             a.example-image-link(href='../img/fiona/gallery/larger-img-4.jpg', data-lightbox='example-set', data-title='Lorem Ipsum')
+              img.example-image(src="../img/fiona/gallery/dummy-img-4.jpg")
           div.col-md-4.col-sm-6.col-xs-12
-             a.example-image-link(href='../img/fiona/gallery/page_1.jpg', data-lightbox='example-set', data-title='Chamber magazines')
-              img.example-image(src="../img/fiona/gallery/page_1_thumb.jpg")
+             a.example-image-link(href='../img/fiona/gallery/larger-img-5.jpg', data-lightbox='example-set', data-title='Lorem Ipsum')
+              img.example-image(src="../img/fiona/gallery/dummy-img-5.jpg")
           div.col-md-4.col-sm-6.col-xs-12
-             a.example-image-link(href='../img/fiona/gallery/Robert.jpg', data-lightbox='example-set', data-title='local photographer Robert at Koosh')
-              img.example-image(src="../img/fiona/gallery/Robert_thumb.jpg")
+             a.example-image-link(href='../img/fiona/gallery/larger-img-6.jpg', data-lightbox='example-set', data-title='Lorem Ipsum')
+              img.example-image(src="../img/fiona/gallery/dummy-img-6.jpg")
 
     div#startjourney
       div.container.text-center
         h2.ttle_start
-          | Start your journey of living the life you've
+          | What’s more, they’re absolutely free! You can do  
           br
-          | only ever dreamed of.
+          | a lot with them. You can modify them.
 
     div#blogsec.section
       div.container.text-center
-        h1.title-header BLOG
-        h3.sub Latest News
+        h1.title-header Be the best version
+        h3.sub of yourself
         .container.news-item.text-left
           each blogss in blog.orderBy('date', 'desc').slice(0, 3)
             .row              
@@ -157,4 +155,4 @@ block content
         div#more-blog.section
           div.morelink
             a.listmore.hvr-ripple-out(href="/blog-list.html")
-              | View All
+              | Lorem Ipsum
