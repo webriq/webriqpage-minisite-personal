@@ -20,15 +20,16 @@ if _path == "/index.html"
                  li
                     a(href="tel:" + records.config.headernavigation[0].phone, target="_blank")
                       img(src="../img/fiona/phone.png")
-                      = records.config.headernavigation[0].phone
+                      | 0987654321
+
 
 
         a.closebtn(href='javascript:void(0)' class="buttontween") ×
 
         nav#nav2.sidenav(data-sidenav='', data-sidenav-toggle='#sidenav-toggle')
            div.logonav
-            a(href="http://fionataylor.buzzin.today/")
-              img(src="../img/fiona/fionataylor_logo.png")
+            a(href="#")
+              img(src= records.config.headernavigation[0].logo)
            ul.sidenav-menu
             each conf in records.config.config
                li(class= conf.class)
@@ -44,9 +45,9 @@ if _path == "/index.html"
              //-   li
              //-      a(href="https://plus.google.com/103138710136868592759" target="_blank")
              //-        i.fa.fa-google-plus(aria-hidden='true')
-             p.resrv © 2017 Fiona Taylor
+             p.resrv © 2017 Buzzin Today
               br 
-              | All Rights Reserved by Webfactories
+              | All Rights Reserved by Buzzin
 
 
     #sliderhead.home
@@ -54,12 +55,13 @@ if _path == "/index.html"
           div.col-md-7.slider_line_txt
             div.text-det
               h2
-                = records.config.headerhero[0].headerhero_mainheading
+                | Build static websites with an easy-to-use framework
+                --//= records.config.headerhero[0].headerhero_mainheading
               h4.worldwd
                 = records.config.headerhero[0].headerhero_secondaryheading
-              div.talk
-                a.letstlk.hvr-ripple-out(href= records.config.headerhero[0].headerhero_button_link)
-                  img(src="../img/fiona/phone.png")
-                  = records.config.headerhero[0].headerhero_button_text
+              --//div.talk
+              --//  a.letstlk.hvr-ripple-out(href= records.config.headerhero[0].headerhero_button_link)
+              --//    img(src="../img/fiona/phone.png")
+              --//    = records.config.headerhero[0].headerhero_button_text
           div.col-md-5.slider_img_right
-            img(src="../img/fiona/fiona_slider_img.png")
+            img(src="")

@@ -5,7 +5,7 @@ backend:
 production:
   backend:
     name: github-api
-    repo: webriq/webriq/webriqpage-minisite-personal # Updated repo details ### Original: owner/repo # Path to your Github repository
+    repo: webriq/webriqpage-minisite-personal # Updated repo details ### Original: owner/repo # Path to your Github repository
     branch: master # Branch to update (master by default)
 
 media_folder: "assets/img/uploads" # Folder where user uploaded files should go
@@ -46,6 +46,7 @@ collections: # A list of collections the CMS should be able to edit
             widget: "list"
             fields:
               - {label: "Item", name: "item", widget: "string"}
+              - {label: "Add unique class", name: "class", widget: "string"}
               - {label: "Url ex.(/page/slug)", name: "url", widget: "string"}
           - label: "Header - Navigation Section"
             name: "headernavigation"
@@ -67,6 +68,21 @@ collections: # A list of collections the CMS should be able to edit
             widget: "list"
             fields:
               - {label: "Footer about us Text", name: "footer_about", widget: "markdown"}
+          - label: "Mission - Section Heading"
+            name: "mission"
+            widget: "list"
+            fields:
+              - {label: "Add mission Heading", name: "mission_heading", widget: "string"}
+              - {label: "Add mission Subheading", name: "mission_subheading", widget: "string"} 
+              - {label: "Add mission paragraph 1", name: "mission_paragraph_1", widget: "string"} 
+              - {label: "Add mission paragraph 2", name: "mission_paragraph_2", widget: "string"} 
+              - {label: "Add mission paragraph 3", name: "mission_paragraph_3", widget: "string"} 
+          - label: "Mission - Section Image"
+            name: "mission_icons"
+            widget: "list"
+            fields:
+              - {label: "Add mission image", name: "mission_image", widget: "image", media_folder: "assets/config"}
+              - {label: "Add mission text", name: "mission_image_text", widget: "image", media_folder: "assets/config"} 
 
   - name: "blog" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Blog"  # Used in the UI, ie.: "New Post"

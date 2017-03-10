@@ -115,7 +115,7 @@ h2, h3, h4 {
 
 /*slider text*/
 #sliderhead {
-  padding:160px 0px 0px;
+  padding:160px 0px 80px;
   background:url(../img/fiona/home-slider-main.jpg) 0 50% no-repeat fixed;
 } 
 #sliderhead .text-det h2{
@@ -469,7 +469,6 @@ h2, h3, h4 {
     width: 30px;
     margin: 35px 0 25px;
     height: 1px;
-    background: #4befe4;
 }
 #copyright .container .det {
   font-size:18px;
@@ -1134,7 +1133,7 @@ h2, h3, h4 {
 #blogsec h1 {
   font-size:24px;
   font-weight:bold;
-  color:#14c9bd;
+  color: #52a5e8;
   font-weight:700;
 } 
 #blogsec {
@@ -1163,12 +1162,12 @@ h2, h3, h4 {
   padding:40px 0px 0px;
 }
 #more-blog .morelink a{
-  border:solid #0092a8 2px;
+  border: solid #2196F3 2px;
   padding:14px 50px;
   border-radius:30px;
   font-size:18px;
   text-transform:uppercase;
-  color:#0092a8;
+  color: #52a5e8;
   font-weight:bold;
 }
 #more-blog .morelink {
@@ -1289,9 +1288,7 @@ h2, h3, h4 {
   font-weight:1000;
   margin-top:25px;
 }
-#blogsec .news-item .blog-rightdet .published b:nth-child(2){
-  color:#0092a8;
-}
+
 #blogsec .news-item .row {
   background:#fff;
   margin-top:20px !important;
@@ -1306,7 +1303,6 @@ h2, h3, h4 {
   margin-top
 }
 #blogsec .news-item .blog-rightdet .short-desc .read-more a{
-  background:#0092a8;
   font-size:16px;
   padding:10px 30px;
   font-weight:600;
@@ -1824,7 +1820,7 @@ body #list-blog .container{
   #sliderhead.blog-header2 {
     padding: 110px 0px 0px;
     background-position:initial !important;
-    background:url(../img/fiona/northlanarkshire_bg.jpg) no-repeat !important;
+    background:url(../img/fionanorthlanarkshire_bg) no-repeat !important;
   }  
   .blog-header2 .related-title {
     font-size: 34px !important;
