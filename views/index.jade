@@ -29,7 +29,7 @@ block content
               | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur
             p.brkr-img
               img(src="../img/fiona/mission-border-small.png")
-    
+
 
     div#bioinfo.section
         .container-fluid
@@ -37,8 +37,8 @@ block content
             .col-md-8.col-sm-8.col-xs-12.leftbio
               h3.titlesevces Better than the best
               p.subbio See Details Below.
-              h4.headbio Build static websites with an easy-to-use framework 
-                span.biospan Lorem 
+              h4.headbio Build static websites with an easy-to-use framework
+                span.biospan Lorem
                 | people world-wide to use their most valuable free gift, their voice to live the life they dream of.
               div.biodet
                 .row
@@ -90,18 +90,18 @@ block content
 
 
             .col-md-4.col-sm-4.col-xs-12.rightbioimg
-                  img(src="../img/fiona/bio-image-right.jpg")   
-     
+                  img(src="../img/fiona/bio-image-right.jpg")
+
     div#gallery.section
       div.container.text-center
         h1.title-header Socialize With Us
-        h5.sub Lorem Ipsum is simply dummy text of the printing 
+        h5.sub Lorem Ipsum is simply dummy text of the printing
           br
           | Lorem Ipsum
         div.row.gallry-list
           div.col-md-4.col-sm-6.col-xs-12
             a.example-image-link(href='../img/fiona/gallery/larger-img-1.jpg', data-lightbox='example-set', data-title='Lorem Ipsum')
-              img.example-image(src="../img/fiona/gallery/dummy-img-1.jpg") 
+              img.example-image(src="../img/fiona/gallery/dummy-img-1.jpg")
           div.col-md-4.col-sm-6.col-xs-12
             a.example-image-link(href='../img/fiona/gallery/larger-img-2.jpg', data-lightbox='example-set', data-title='Lorem Ipsum')
               img.example-image(src="../img/fiona/gallery/dummy-img-2.jpg")
@@ -121,7 +121,7 @@ block content
     div#startjourney
       div.container.text-center
         h2.ttle_start
-          | What’s more, they’re absolutely free! You can do  
+          | What’s more, they’re absolutely free! You can do
           br
           | a lot with them. You can modify them.
 
@@ -131,15 +131,15 @@ block content
         h3.sub of yourself
         .container.news-item.text-left
           each blogss in blog.orderBy('date', 'desc').slice(0, 3)
-            .row              
+            .row
               .news-items
                 div.col-md-6.col-sm-12.col-xs-12.blog-leftimg
                   div.lead-sec
                     .lead-image
-                      img.img-responsive(src=blogss.thumbnail)
+                      img.img-responsive(src=blogss.mainimage)
                     h5.lead-tag= blogss.leadtag
                 div.col-md-6.col-sm-12.col-xs-12.blog-rightdet
-                  div.blog-det 
+                  div.blog-det
                     h3.blog-title
                       a(href=blogss.permalink)= blogss.title
                     .published
@@ -148,7 +148,7 @@ block content
                       p= blogss.shortdesc
                       p.read-more
                         a(href=blogss.permalink)
-                          | Read More   
+                          | Read More
                           i.fa.fa-long-arrow-right(aria-hidden='true')
 
 
