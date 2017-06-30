@@ -130,7 +130,7 @@ block content
         h1.title-header Be the best version
         h3.sub of yourself
         .container.news-item.text-left
-          each blogss in blog.orderBy('date', 'desc').slice(0, 3)
+          each blogss in sortByKey(blog)
             .row
               .news-items
                 div.col-md-6.col-sm-12.col-xs-12.blog-leftimg
